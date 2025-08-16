@@ -1,0 +1,32 @@
+package com.example;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Main {
+    public static void main(String[] args) {
+        String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe"; // change as needed
+        String username = "your_username";
+        String password = "your_password";
+
+        try {
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            Connection conn = DriverManager.getConnection(jdbcUrl, username, password);
+            Statement stmt = conn.createStatement();
+
+            ResultSet rs = stmt.executeQuery("SELECT * FROM YOUR_TABLE");
+
+            while (rs.next()) {
+                System.out.println("Column1: " + rs.getString(1));
+            }
+
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}

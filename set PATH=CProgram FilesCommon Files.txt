@@ -1,0 +1,4 @@
+set PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;"C:\Program Files\Java\jdk-21\bin;";C:\apache-maven-3.9.11\apache-maven\src\bin;"C:\Users\SYBER COMPUTERS\AppData\Local\Microsoft\WindowsApps;";"C:\Program Files\Java\jdk-21\bin;C:\apache-maven-3.9.11\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin;
+
+set MAVEN_HOME="C:\apache-maven-3.9.11\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin"
+set PATH=%MAVEN_HOME%\bin;%PATH%
