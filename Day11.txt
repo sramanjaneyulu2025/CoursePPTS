@@ -1,0 +1,79 @@
+public class Customer 
+{
+  int cid;
+  String cname;
+  String caddress;
+  int phoneNo;
+
+
+}
+
+
+CUSTOMER
+
+cid   cname   cadress    phoneNo
+
+CREATE TABLE products(product_id INT PRIMARY KEY,
+                      product_name VARCHAR(255) NOT NULL,
+                      product_description TEXT,
+                      product_price DECIMAL(10, 2) NOT NULL,
+                      product_category VARCHAR(100),
+                      product_created TIMESTAMP NOT NULL);	
+
+															
+                      INSERT INTO products(product_id,
+                                           product_name,
+                                           product_description, 
+                                           product_price,
+                                           product_category,
+                                           product_created)
+                                           VALUES (2, 'Orangle', 'Orange Fruit', 25.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (3, 'Mango', 'Mango Fruit', 35.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (4, 'Banana', 'Banana Fruit', 75.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (5, 'Grape', 'Grape Fruit', 45.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (6, 'Pineapple', 'Pineapple Fruit', 65.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (7, 'Papaya', 'Papaya Fruit', 85.50, 'Vegetables', CURRENT_TIMESTAMP);
+
+
+INSERT INTO products(product_id,
+                                           product_name,
+                                           product_description, 
+                                           product_price,
+                                           product_category,
+                                           product_created)
+                                           VALUES (21, 'Orangle', 'Orange Fruit', 25.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (31, 'Mango', 'Mango Fruit', 35.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (41, 'Banana', 'Banana Fruit', 75.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (51, 'Grape', 'Grape Fruit', 45.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (61, 'Pineapple', 'Pineapple Fruit', 65.50, 'Vegetables', CURRENT_TIMESTAMP),
+                                           (71, 'Papaya', 'Papaya Fruit', 85.50, 'Vegetables', CURRENT_TIMESTAMP);
+
+
+CREATE TABLE inventory(inventory_id INT PRIMARY KEY,
+                       product_id INT,
+                       quantity INT NOT NULL,
+                       warehouse_id INT,
+                       last_updated TIMESTAMP,
+                       FOREIGN KEY(product_id) REFERENCES products(product_id));
+
+
+INSERT INTO inventory(inventory_id,
+                                           product_id,
+                                           quantity, 
+                                           warehouse_id,                                           
+                                           last_updated)
+                                           VALUES (1, 12, 400, 1, CURRENT_TIMESTAMP),
+                                           (2, 14, 200, 3, CURRENT_TIMESTAMP),
+                                           (4, 15, 300, 3, CURRENT_TIMESTAMP),
+                                           (3, 16, 400, 1, CURRENT_TIMESTAMP),
+                                           (6, 17, 150, 2, CURRENT_TIMESTAMP),
+                                           (5, 6, 250, 2, CURRENT_TIMESTAMP);
+
+
+blue         white
+
+green       yellow
+
+red
+
+
