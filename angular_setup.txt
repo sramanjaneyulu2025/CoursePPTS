@@ -1,0 +1,24 @@
+Step 1: Down load visual studio code for Windows version 
+
+URL : https://code.visualstudio.com/download
+
+Step 2: In below link go to the Dependencies and install the node js
+
+URL : https://angular.dev/tools/cli/setup-local#dependencies
+
+Step 3: go to the node js folder(C:\Program Files\nodejs) in cmd prompt
+
+        and type :  npm install -g @angular/cli
+
+Step 4 : for creating new work space go to other path and type : ng new my-app
+
+Step 5 : type cd my-app
+
+Step 6 : ng serve --open
+
+
+1) create sample product page using this product id, product name, product qty, product price in angular  
+2) create inventory page for inventory id, inventory name
+3) create warehouse page for ware house id, warehouse name also add additional details .
+
+
